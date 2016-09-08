@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    >
+    <include layout="@layout/head"/>
+
+<RelativeLayout
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <View
+
+    android:id="@+id/view_1"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"
+    />
+    <View
+        android:id="@+id/view_2"
+        android:layout_alignParentLeft="true"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        />
+    <View
+        android:id="@+id/view_3"
+        android:layout_alignParentRight="true"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        />
+
+
+    <com.mycarhz.myhz.ui.PullToRefreshListView
+        android:divider="@android:color/transparent"
+        android:layout_below="@+id/view_1"
+        android:id="@+id/ptr_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true"
+        android:padding="10dp"
+        android:fadingEdge="none">
+
+    </com.mycarhz.myhz.ui.PullToRefreshListView>
+
+
+
+</RelativeLayout>
+
+
+</LinearLayout>

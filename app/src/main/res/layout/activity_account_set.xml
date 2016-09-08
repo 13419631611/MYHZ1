@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <!-- ActionBar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="@color/colorTitleText">
+
+        <TextView
+            android:id="@+id/register_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/myhz"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="@dimen/font_14" />
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:paddingLeft="20dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/mycenter_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/account_set"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_11" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 头部 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:background="@mipmap/password_bg"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/default_face" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_set_username"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_13" />
+
+                <TextView
+                    android:id="@+id/tv_account_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_set_username1"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_13" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--实名认证-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        >
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_account_set_real_name"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="26dp"
+            android:src="@mipmap/account_set_real_name" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@+id/iv_account_set_real_name"
+            android:text="@string/account_set_real_name" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_account_set_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="26dp"
+            android:src="@mipmap/mycenter_goto" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toStartOf="@+id/iv_account_set_goto"
+            android:text="@string/account_set_unautherized"
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_10" />
+    </RelativeLayout>
+    <!--分割线-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cut_off" />
+
+
+    <!--手机认证-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        >
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_account_set_real_phone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="26dp"
+            android:src="@mipmap/account_set_real_phone" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@+id/iv_account_set_real_phone"
+            android:text="@string/account_set_real_phone" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_account_set_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="26dp"
+            android:src="@mipmap/mycenter_goto" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toStartOf="@+id/iv_account_set_goto"
+            android:text="@string/account_set_autherized"
+            android:textSize="@dimen/font_10" />
+    </RelativeLayout>
+    <!--分割线-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cut_off" />
+
+
+    <!--手机认证-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        >
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_account_set_real_phone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="26dp"
+            android:src="@mipmap/account_set_change_password" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@+id/iv_account_set_real_phone"
+            android:text="@string/account_set_password" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_account_set_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="26dp"
+            android:src="@mipmap/mycenter_goto" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toStartOf="@+id/iv_account_set_goto"
+            android:text="@string/account_set_change_password"
+            android:textSize="@dimen/font_10" />
+    </RelativeLayout>
+    <!--分割线-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cut_off" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/shape_login"
+        android:gravity="center"
+        android:text="@string/account_set_back_login"
+        android:textColor="@color/white"  />
+
+
+</LinearLayout>

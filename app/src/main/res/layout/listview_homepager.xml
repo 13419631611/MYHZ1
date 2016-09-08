@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="5dp"
+    android:paddingTop="10dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+    >
+
+
+
+<ImageView
+    android:id="@+id/iv"
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    android:src="@drawable/bg_3"
+    />
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蚂蚁合众第16期众筹项目丰田凯美瑞"
+        android:layout_marginTop="15dp"
+        android:textSize="13sp"
+        android:textColor="#343434"
+        android:layout_marginLeft="15dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="众筹金额： "
+        android:textColor="#808080"
+        android:textSize="13sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7236.00"
+        android:textColor="#ff7900"
+        android:layout_marginTop="15dp"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textColor="#808080"
+            android:layout_marginTop="15dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_marginTop="15dp"
+        android:layout_width="290dp"
+        android:layout_height="13dp"
+        android:layout_marginLeft="15dp"
+        android:max="100"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/progress"
+        />
+
+        <TextView
+        android:id="@+id/percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textColor="#808080"
+        android:textSize="13sp"
+        android:layout_marginTop="15dp"
+            android:layout_marginLeft="3dp"
+        />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textColor="#808080"
+            android:textSize="13sp"
+            android:layout_marginTop="15dp"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="参与人次: "
+            android:textColor="#808080"
+            android:textSize="13sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textColor="#ff7900"
+            android:textSize="13sp"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人次"
+            android:textColor="#808080"
+            android:textSize="13sp"
+            android:layout_marginTop="15dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余金额: "
+            android:textColor="#808080"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/no_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="75267.00"
+            android:textColor="#ff7900"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv1"
+            />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_toRightOf="@+id/no_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 元"
+            android:textColor="#808080"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/OK"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:src="@drawable/btn_1"-->
+        <!--android:layout_marginTop="-8dp"-->
+        <!--android:layout_marginLeft="160dp"-->
+        <!--/>-->
+        <TextView
+            android:gravity="center"
+            android:id="@+id/jinxing"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="参与众筹"
+            android:layout_alignParentRight="true"
+            android:textSize="13sp"
+            android:background="@drawable/selector_myall_jinxing"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#ffffff"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="@color/colorTitleText">
+
+                <TextView
+                    android:id="@+id/register_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/myhz"
+                    android:textColor="@android:color/primary_text_dark"
+                    android:textSize="@dimen/font_14" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ll_back"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:scaleType="centerInside"
+                        android:paddingLeft="20dp"
+                        android:src="@mipmap/mycenter_back"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_11"
+                        android:text="@string/my_center"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="8dp"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!-- 头部 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:background="@mipmap/password_bg">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="26dp"
+                        android:src="@mipmap/default_face" />
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/tv_myCenter_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/userLogin"
+                        android:textColor="@color/textBlack"
+                        android:textSize="@dimen/font_12" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- 账户余额 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_myCenter_purse"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="28dp"
+                    android:src="@mipmap/mycenter_bag" />
+
+
+                <TextView
+                    android:id="@+id/tv_myCenter_usableAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_myCenter_purse"
+                    android:text="@string/myCenter_usableAmount"
+                    android:textColor="@color/textBlack"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_myCenter_usable_Amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_myCenter_usableAmount"
+                    android:text="@string/yuan"
+                    android:textColor="@color/red"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+            <!--  分割线-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cut_off" />
+            <!-- 账户金额详情 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:background="@color/backgroundGray"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:id="@+id/tv_myCenter_totalAmount1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/my_center_total_amount"
+                            android:textColor="@color/textUser"
+                            android:textSize="@dimen/font_11" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_myCenter_totalAmount1"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rmb"
+                                android:textColor="@color/textUser"
+                                android:textSize="@dimen/font_11" />
+
+                            <TextView
+                                android:id="@+id/tv_myCenter_totalAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:text="@string/yuan"
+                                android:textColor="@color/yellow"
+                                android:textSize="@dimen/font_11" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/cut_off" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:id="@+id/tv_myCenter_waitAmount1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/my_center_wait_amount"
+                            android:textColor="@color/textUser"
+                            android:textSize="@dimen/font_11" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_myCenter_waitAmount1"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rmb"
+                                android:textColor="@color/textUser"
+                                android:textSize="@dimen/font_11" />
+
+                            <TextView
+                                android:id="@+id/tv_myCenter_waitAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:text="@string/yuan"
+                                android:textColor="@color/yellow"
+                                android:textSize="@dimen/font_11" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <!--  分割线-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cut_off" />
+
+            <!-- 账户金额详情2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:background="@color/backgroundGray"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:id="@+id/tv_myCenter_incomeAmount1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/my_center_income_amount"
+                            android:textColor="@color/textUser"
+                            android:textSize="@dimen/font_11" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_myCenter_incomeAmount1"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rmb"
+                                android:textColor="@color/textUser"
+                                android:textSize="@dimen/font_11" />
+
+                            <TextView
+                                android:id="@+id/tv_myCenter_incomeAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:text="@string/yuan"
+                                android:textColor="@color/yellow"
+                                android:textSize="@dimen/font_11" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/cut_off" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:id="@+id/tv_myCenter_frozenAmount1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/my_center_frozen_amount"
+                            android:textColor="@color/textUser"
+                            android:textSize="@dimen/font_11" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_myCenter_frozenAmount1"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rmb"
+                                android:textColor="@color/textUser"
+                                android:textSize="@dimen/font_11" />
+
+                            <TextView
+                                android:id="@+id/tv_myCenter_frozenAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:text="@string/yuan"
+                                android:textColor="@color/yellow"
+                                android:textSize="@dimen/font_11" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <!--  分割线-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cut_off" />
+            <!-- 账户金额详情2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_mycenter_top_up"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:src="@mipmap/mycenter_tpo_up" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:text="@string/my_center_top_up"
+                        android:textSize="@dimen/font_11"
+
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/cut_off" />
+
+                <LinearLayout
+                    android:id="@+id/ll_mycenter_withdraw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:src="@mipmap/mycenter_withdraw_deposit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:text="@string/my_center_withdraw_deposit"
+                        android:textSize="@dimen/font_11"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <!--  分割线-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cut_off" />
+            <!-- 账户设置-->
+            <RelativeLayout
+                android:id="@+id/rl_mycenter_account_set"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_mycenter_zhsz"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/mycenter_set_account" />
+
+                <TextView
+                    android:id="@+id/tv_myCenter_zhsz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/iv_mycenter_zhsz"
+                    android:text="@string/my_center_set_account"
+                    android:textColor="@color/textUser"
+                    android:textSize="@dimen/font_11" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="26dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/mycenter_goto" />
+            </RelativeLayout>
+            <!--  分割线-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cut_off" />
+            <!-- 系统设置-->
+            <RelativeLayout
+                android:id="@+id/rl_mycenter_system_set"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_mycenter_xtsz"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/mycenter_set_system" />
+
+                <TextView
+                    android:id="@+id/tv_myCenter_xtsz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/iv_mycenter_xtsz"
+                    android:text="@string/my_center_set_system"
+                    android:textColor="@color/textUser"
+                    android:textSize="@dimen/font_11" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="26dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/mycenter_goto" />
+            </RelativeLayout>
+            <!--  分割线-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cut_off" />
+            <!-- 账户设置-->
+            <RelativeLayout
+                android:id="@+id/rl_mycenter_invite_set"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_mycenter_yqyj"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/mycenter_set_invite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/iv_mycenter_yqyj"
+                    android:text="@string/my_center_set_invite"
+                    android:textColor="@color/textUser"
+                    android:textSize="@dimen/font_11" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="26dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/mycenter_goto" />
+            </RelativeLayout>
+            <!--  分割线-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cut_off" />
+            <!-- 账户设置-->
+            <RelativeLayout
+                android:id="@+id/rl_mycenter_escrow_set"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_mycenter_zhsz"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/mycenter_set_escrow" />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_myCenter_zhsz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/iv_mycenter_zhsz"
+                    android:text="@string/my_center_set_escrow"
+                    android:textColor="@color/textUser"
+                    android:textSize="@dimen/font_11" />
+
+                <TextView
+                    android:id="@+id/tv_myCenter_escrow"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_toStartOf="@+id/iv_mycenter_goto"
+                    android:text="@string/account_set_nonactivated"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_10" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_mycenter_goto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="26dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/mycenter_goto" />
+            </RelativeLayout>
+            <!--  分割线-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cut_off" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boder"
+
+
+        >
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_centerVertical="true"
+
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/wuyanzu" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="孙里"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignTop="@+id/textView1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:src="@drawable/icon_6" />
+
+        <TextView
+            android:id="@+id/textView2_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="受托车辆: "
+            android:textColor="@android:color/black"
+            android:textSize="9sp" />
+
+
+        <TextView
+
+            android:id="@+id/textView2_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2_key"
+            android:layout_toRightOf="@+id/textView2_key"
+            android:text="6"
+            android:textColor="@android:color/black"
+            android:textSize="9sp" />
+
+
+
+        <TextView
+            android:id="@+id/textView3_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2_key"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="平均回款时间: "
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="9sp" />
+
+
+        <TextView
+
+            android:id="@+id/textView3_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3_key"
+            android:layout_toRightOf="@+id/textView3_key"
+            android:text="21.5天"
+            android:textColor="@android:color/black"
+            android:textSize="9sp" />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/textView4_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3_key"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="赚取利润: "
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="9sp" />
+
+
+        <TextView
+
+            android:id="@+id/textView4_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4_key"
+            android:layout_toRightOf="@+id/textView4_key"
+            android:text="16565456万 "
+            android:textColor="@android:color/black"
+            android:textSize="9sp" />
+
+
+
+        <ImageView
+            android:id="@+id/imageView_key"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_below="@+id/textView4_key"
+            android:src="@drawable/phone"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/phone"
+         android:layout_toRightOf="@+id/imageView_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textView4_key"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/font_12"
+            android:text="400-996-5536"
+            android:textColor="#fcb80f"
+            />
+
+        <ImageView
+            android:id="@+id/btn"
+            android:layout_marginTop="8dp"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:src="@drawable/btn_3"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_below="@+id/imageView_key"
+            android:scaleType="centerInside"
+            />
+    </RelativeLayout>
+</LinearLayout>

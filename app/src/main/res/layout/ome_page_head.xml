@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="#000000"
+        >
+        <TextView
+            android:id="@+id/zhuce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textSize="11sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蚂蚁合众"
+            android:textSize="11sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:id="@+id/denglu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textSize="11sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:textColor="#ffffff"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <com.jude.rollviewpager.RollPagerView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/roll_view_pager"
+        app:rollviewpager_play_delay="3000"
+        >
+    </com.jude.rollviewpager.RollPagerView>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_1"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="众筹动态: 共有 "
+                android:textSize="10sp"
+                android:textColor="#ffffff"
+                />
+            <TextView
+                android:id="@+id/tv_xm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9 8"
+                android:textColor="#fc0203"
+                android:textSize="10sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text=" 个项目"
+                android:textColor="#ffffff"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已有 "
+                android:textSize="10sp"
+                android:textColor="#ffffff"
+                />
+            <TextView
+                android:id="@+id/tv_yh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 8 0 0"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text=" 位用户累计投资"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/tv_rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text=" 2 6,7 6 4，5 4 9"
+                android:textColor="#fc0203"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text=" 元"
+                android:textColor="#ffffff"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-5dp"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_hot"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ooo"
+            />
+
+        <TextView
+            android:id="@+id/ooo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  热门项目"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_centerInParent="true"
+
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/liaojie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="了解蚂蚁合众"
+            android:textSize="16sp"
+            android:textColor="#fcb80f"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/double_right"
+
+            />
+
+
+
+    </RelativeLayout>
+</LinearLayout>

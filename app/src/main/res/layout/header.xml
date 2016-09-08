@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center" >
+    
+    <ImageView 
+        android:id="@+id/iv_left"
+        android:visibility="gone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/loading"/>
+    
+    <!-- 左边箭头 -->
+    <ImageView 
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/common_listview_headview_red_arrow"/>
+    
+    <!-- 标题和刷新时间TextView  -->
+	<LinearLayout 
+	    android:layout_marginLeft="10dp"
+	    android:gravity="center"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	    
+	    <!-- 标题 -->
+	    <TextView 
+	        android:id="@+id/tv_header"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="下拉刷新"
+	        android:textColor="#f00"
+	        android:textSize="18sp"/>
+	    
+	    <!-- 最后刷新  -->
+	    <TextView 
+	        android:id="@+id/tv_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="最后刷新时间： hh:mm:ss"
+	        android:textColor="#f00"/>
+	</LinearLayout>
+	
+	<ImageView 
+        android:id="@+id/iv_right"
+        android:visibility="gone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/loading"/>
+
+</LinearLayout>

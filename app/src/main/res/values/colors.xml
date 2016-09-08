@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <drawable name="yellow">#fcb80f</drawable>
+    <drawable name="gray">#4d4d4d</drawable>
+    <color name="colorTitleText">#1b1c20</color>
+    <color name="colorHeadText">#347ebc</color>
+    <color name="white">#ffffff</color>
+    <color name="textBlack">#333333</color>
+    <color name="yellow">#fcb80f</color>
+    <color name="cut_off">#cccaca</color>
+    <color name="textUser">#808080</color>
+    <color name="backgroundGray">#f7f7f7</color>
+    <color name="loginBtnBackground">#fcb80f</color>
+    <color name="red">#fe0101</color>
+
+</resources>

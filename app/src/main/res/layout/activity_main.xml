@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divide"
+        android:layout_alignParentTop="true">
+
+    </FrameLayout>
+
+
+
+    <View
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/activity_group_radioGroup"
+        android:background="#cccccc"/>
+
+    <RadioGroup
+
+        android:id="@+id/activity_group_radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:checkedButton="@+id/order_process"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+
+        >
+
+        <RadioButton
+            android:paddingTop="1dp"
+            android:id="@+id/homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector_home_page"
+            android:text="首页"
+            android:textColor="@drawable/selector_textview_color"
+            android:textSize="8sp"
+            android:checked="true"
+            android:drawablePadding="-6dp"
+            />
+
+        <RadioButton
+            android:paddingTop="1dp"
+            android:id="@+id/myall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector_my_all"
+
+            android:text="众筹项目"
+            android:textSize="8sp"
+            android:drawablePadding="-6dp"
+            android:textColor="@drawable/selector_textview_color"
+            />
+
+        <RadioButton
+            android:paddingTop="1dp"
+            android:id="@+id/client"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector_client"
+            android:text="受托人"
+            android:textSize="8sp"
+            android:drawablePadding="-6dp"
+            android:textColor="@drawable/selector_textview_color"
+            />
+
+        <RadioButton
+            android:layout_marginTop="1dp"
+            android:drawablePadding="-6dp"
+            android:id="@+id/fund"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector_fund_record"
+            android:text="资金记录"
+            android:textSize="8sp"
+            android:textColor="@drawable/selector_textview_color"
+            />
+
+        <RadioButton
+            android:paddingTop="1dp"
+            android:id="@+id/personal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector_personal_center"
+            android:text="个人中心"
+            android:textSize="8sp"
+            android:drawablePadding="-6dp"
+            android:textColor="@drawable/selector_textview_color"
+            />
+
+
+
+    </RadioGroup>
+</RelativeLayout>

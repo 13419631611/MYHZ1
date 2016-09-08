@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="10dp"
+        android:background="#f7f7f7"
+        android:gravity="center_vertical"
+        android:paddingLeft="7dp"
+        android:text="受托人简介"
+        android:textSize="10sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+
+
+
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="110dp"
+            android:layout_height="140dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/wuyanzu" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="孙里"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignTop="@+id/textView1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:src="@drawable/icon_6" />
+
+        <TextView
+            android:id="@+id/textView2_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:ellipsize="end"
+            android:lines="3"
+            android:text="个人简介:android:lines属性即可，不过这里有个不好的地方，比如你设置了最多显示两行，如果内容用一行就可以全部显示了，这时候TextView还是会占用两行的高度空间，如果有大神知道怎么解决这个问题，请指导一下:)
+"
+            android:textColor="@android:color/black"
+            android:textSize="11sp" />
+
+
+        <TextView
+            android:id="@+id/textView3_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2_key"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="职务 :"
+            android:textColor="#ff7900"
+            android:textSize="9sp" />
+
+
+        <TextView
+
+            android:id="@+id/textView3_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3_key"
+            android:layout_toRightOf="@+id/textView3_key"
+            android:text="风控师"
+            android:textColor="@android:color/black"
+            android:textSize="9sp" />
+
+
+        <TextView
+            android:id="@+id/textView4_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3_key"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="擅长:"
+            android:textColor="#ff7900"
+            android:textSize="9sp" />
+
+
+        <TextView
+            android:id="@+id/textView4_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4_key"
+            android:layout_toRightOf="@+id/textView4_key"
+            android:background="@drawable/shape_client"
+            android:paddingBottom="3dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="3dp"
+            android:singleLine="true"
+            android:text="16565456万 "
+            android:textColor="@android:color/white"
+            android:textSize="9sp" />
+
+
+        <ImageView
+            android:id="@+id/imageView_key"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/textView4_key"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:src="@drawable/phone" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4_key"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imageView_key"
+            android:text="400-996-5536"
+            android:textColor="#fcb80f"
+            android:textSize="@dimen/font_12" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:background="#f7f7f7"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/weituo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_client_jj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:text="委托项目"
+                android:textColor="#fcb80f"
+                android:textSize="9sp" />
+
+            <ImageView
+                android:id="@+id/weituo_line"
+                android:layout_centerHorizontal="true"
+                android:layout_width="60dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:src="@mipmap/stxm_21" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wancheng"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_client_xm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="9dp"
+
+                android:text="已完成项目"
+                android:textColor="#fcb80f"
+                android:textSize="9sp" />
+
+            <ImageView
+                android:id="@+id/wancheng_line"
+                android:layout_centerHorizontal="true"
+                android:layout_width="60dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:src="@mipmap/stxm_21" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginRight="17dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="2"
+            android:text="项目名称"
+            android:gravity="center"
+            android:textSize="9sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:text="众筹价格"
+            android:gravity="center"
+            android:textSize="9sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:text="销售期限"
+            android:gravity="center"
+            android:textSize="9sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:text="众筹进度"
+            android:gravity="center"
+            android:textSize="9sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:text="众筹状态"
+            android:textSize="9sp"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

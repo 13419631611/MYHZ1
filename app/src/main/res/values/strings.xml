@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">MYHZ</string>
+    <!--  登录 -->
+    <string name="login">登录</string>
+    <string name="myhz">蚂蚁合众</string>
+    <string name="userLogin">用户登录</string>
+    <string name="login_user_hint">请输入用户名</string>
+    <string name="login_user_text">用户名：</string>
+    <string name="login_passWorld_text">密　码：</string>
+    <string name="login_passWorld_hint">请输入密码</string>
+    <string name="passWorld_retrieved">忘记密码？我要找回</string>
+    <string name="immediately_register">立刻注册</string>
+    <string name="immediately_login">立刻登录</string>
+    <!--  注册 -->
+    <string name="register">注册</string>
+    <string name="userRegister">用户注册</string>
+    <string name="user_text_zc">手 机 号：</string>
+    <string name="passWorld_text_zc">密　　码：</string>
+    <string name="passWorld_text_qr">确认密码：</string>
+    <string name="passWorld_et_hint">请重复输入密码</string>
+    <string name="verification_code_text">验 证 码：</string>
+    <string name="verification_code_et_hint">请输入验证码</string>
+    <string name="recommend_code_text">推 荐 码：</string>
+    <string name="recommend_code_et_hint">请输入推荐码</string>
+    <string name="btn_register">同意协议并注册</string>
+    <string name="terms">使用条款及隐私条款</string>
+    <string name="asterisk">*</string>
+
+
+    <string name="serverurl">1.0</string>
+
+
+
+    <!-- 个人中心 -->
+    <string name="my_center">个人中心</string>
+    <string name="myCenter_usableAmount">可用余额：</string>
+    <string name="yuan">0.00元</string>
+    <string name="rmb">¥</string>
+    <string name="my_center_total_amount">账户总额</string>
+    <string name="my_center_wait_amount">预计收益</string>
+    <string name="my_center_income_amount">累计收益</string>
+    <string name="my_center_frozen_amount">冻结金额</string>
+    <string name="my_center_top_up">充值</string>
+    <string name="my_center_withdraw_deposit">提现</string>
+    <string name="my_center_set_account">账户设置</string>
+    <string name="my_center_set_system">系统设置</string>
+    <string name="my_center_set_invite">邀请有奖</string>
+    <string name="my_center_set_escrow">开通第三方账户</string>
+
+    <!-- 个人中心 -->
+    <string name="account_set">账户设置</string>
+    <string name="account_set_username">账 户 名：</string>
+    <string name="account_set_username1">12312341234</string>
+    <string name="account_set_real_name">实名认证</string>
+    <string name="account_set_real_phone">手机认证</string>
+    <string name="account_set_password">登录密码</string>
+    <string name="account_set_unautherized">未认证　</string>
+    <string name="account_set_nonactivated">未开通　</string>
+
+    <string name="account_set_autherized">已认证　</string>
+    <string name="account_set_change_password">修改密码</string>
+    <string name="account_set_back_login">退出登录</string>
+
+    <!-- 充值 -->
+    <string name="top_up">充值</string>
+    <string name="top_up_amount">充值金额：</string>
+    <string name="top_up_amount_et_hint">请输入充值金额</string>
+    <string name="top_up_amount_btn">提交</string>
+    <string name="top_up_amount_text_hint">温馨提示：快捷支付充值免手续费!充值资金可用于进行验证、投标、还款等。充值成功后资金会立刻拨到您的账户。</string>
+
+    <!-- 提现 -->
+    <string name="withdraw">提现</string>
+    <string name="withdraw_amount">提现金额：</string>
+    <string name="withdraw_amount_et_hint">请输入提现金额</string>
+    <string name="withdraw_available_amount">可用金额：</string>
+    <string name="withdraw_amount_text_hint">温馨提示：请确保您输入的提现金额，以及银行账户无误。</string>
+
+
+</resources>
